@@ -17,4 +17,18 @@ void menu(){
     cout << "9.Nhap diem mon hoc phu." << endl; 
     cout << "10.Ghi vao file." << endl;
     cout << "0.Thoat." << endl;
-}
+};
+//Tu
+void docFile(){};
+void ghiFile(){};
+void cas1(){};
+void cas2(){};
+void cas3(){};
+void cas4(){};
+void cas5(){};
+//dat
+void cas6(){};
+void cas7(){};
+void cas8(){};
+void cas9(){};
+void cas10(){};

@@ -24,34 +24,34 @@ int main(){
             cin >> i;
             break;
         case 1: 
-            cout << "       Danh sach hoc vien." << endl; 
+            cout << "       1.Danh sach hoc vien." << endl; 
             break;
         case 2: 
-            cout << "       Them 1 hoc vien moi." << endl; 
+            cout << "       2.Them 1 hoc vien moi." << endl; 
             break;
         case 3: 
-            cout << "       Xoa hoc vien." << endl; 
+            cout << "       3.Xoa hoc vien." << endl; 
             break;
         case 4: 
-            cout << "       Sap xep theo DM1." << endl; 
+            cout << "       4.Sap xep theo DM1." << endl; 
             break;
         case 5: 
-            cout << "       Sap xep theo DM2." << endl; 
+            cout << "       5.Sap xep theo DM2." << endl; 
             break;
         case 6: 
-            cout << "       Sap xep theo DM1 và DM2." << endl; 
+            cout << "       6.Sap xep theo DM1 và DM2." << endl; 
             break;
         case 7: 
-            cout << "       Danh sach theo ma mon hoc." << endl; 
+            cout << "       7.Danh sach theo ma mon hoc." << endl; 
             break;
         case 8: 
-            cout << "       Them mon hoc phu cho sv." << endl; 
+            cout << "       8.Them mon hoc phu cho sv." << endl; 
             break;
         case 9: 
-            cout << "       Nhap diem mon hoc phụ." << endl; 
+            cout << "       9.Nhap diem mon hoc phụ." << endl; 
             break;
         case 10: 
-            cout << "       Ghi vao file." << endl; 
+            cout << "       10.Ghi vao file." << endl; 
             break;
         default:
             cout << "       Vui long nhap lai: ";
