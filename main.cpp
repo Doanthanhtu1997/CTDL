@@ -4,12 +4,10 @@
 #include <iostream>
 #include "function.cpp"
 using namespace std;
-void docfile();
+#define MAX 100
 int main(){
-    // SV sv1("sv0001", "Nguyen Van Dat");
-    // sv1.setMonHoc("mh001", 9);
-    // cout << sv1.toString();
-    // // cout << sv1.getMaHV << "\n" << sv1.getHoTenHV << endl;
+    SV sv[max];
+    int n = docFile(sv, fileName);
     while (true)
     {
         menu();
@@ -24,10 +22,11 @@ int main(){
             break;
         case 1: 
             cout << "       1.Danh sach hoc vien." << endl;
+            case1(sv, n);
             break;
         case 2: 
             cout << "       2.Them 1 hoc vien moi." << endl;
-            cas1();
+            case2();
             break;
         case 3: 
             cout << "       3.Xoa hoc vien." << endl; 
@@ -51,7 +50,8 @@ int main(){
             cout << "       9.Nhap diem mon hoc phụ." << endl; 
             break;
         case 10: 
-            cout << "       10.Ghi vao file." << endl; 
+            cout << "       10.Ghi vao file." << endl;
+            ghiFile(sv, n, fileName);
             break;
         default:
             cout << "       Vui long nhap lai: ";
