@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <iostream>
 #include "SV.cpp"
-#include "MonHoc.cpp"
 #include <iostream>
 #include "function.cpp"
 using namespace std;
@@ -24,10 +23,11 @@ int main(){
             cin >> i;
             break;
         case 1: 
-            cout << "       1.Danh sach hoc vien." << endl; 
+            cout << "       1.Danh sach hoc vien." << endl;
             break;
         case 2: 
-            cout << "       2.Them 1 hoc vien moi." << endl; 
+            cout << "       2.Them 1 hoc vien moi." << endl;
+            cas1();
             break;
         case 3: 
             cout << "       3.Xoa hoc vien." << endl; 
@@ -63,25 +63,4 @@ int main(){
     } 
     
     return 0;
-}
-void docfile(){
-    // FILE *fi = fopen("hocvien.txt","r");
-    // if(fi == NULL){
-    //     cout << "file khong ton tai.";
-    //     exit(0);
-    // }
-    // char n = fgetc(fi) - '0';
-    // char temp = fgetc(fi);
-    // int i = 0, j = 0;
-    // while(temp != EOF){
-    //     if(temp == '0' || temp == '1'){
-    //         if(j == n){
-    //             j = 0;
-    //             i++;
-    //         }  
-    //         A[i][j++] = temp -'0';
-    //     }
-    //     temp = fgetc(fi);
-    // }
-    // fclose(fi);
 }

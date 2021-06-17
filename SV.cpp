@@ -1,7 +1,9 @@
 #pragma once
 #include <iostream>
+#include <sstream>
 #include <string>
-#include "MonHoc.cpp"
+#include <string.h>
+#define MAX 100
 using namespace std;
 
 class SV
@@ -9,36 +11,45 @@ class SV
     private:
         char maHV[8];
         char hotenHV[30];
-        MonHoc monHoc[3];
+        char maMH[4];
+        int diemMH;
     public:
         SV(){};   
-        SV(string maHV, string hotenHV){
-            this->maHV = maHV;
-            this->hotenHV = hotenHV;
+        SV(char maHV[], char hotenHV[]){
+            strcpy(this->maMH, maMH);
+            strcpy(this->hotenHV, hotenHV);
         }
-        void setMonHoc(MonHoc monHoc){
-            this->monHoc = monHoc;
+        SV(char maHV[], char hotenHV[], char maMH[], int diemMH){
+            strcpy(this->maMH, maMH);
+            strcpy(this->hotenHV, hotenHV);
+            strcpy(this->maMH, maMH);
+            this->diemMH = diemMH;
         }
-        void setMonHoc(string maMH, int diemMH){
-            MonHoc monHoc(maMH, diemMH);
-            this->monHoc = monHoc;
+        void setMonHoc1(char maMH[], int diemMH){
+            strcpy(this->maMH, maMH);
+            this->diemMH = diemMH;
         }
+        
         string getMaHV(SV sv){return sv.maHV;};
-        void setMaHV(string maHV){
-            this->maHV = maHV;
+        void setMaHV(char maHV[]){
+            strcpy(this->maHV, maHV);
         }
+        int getDiemMH(SV sv){return sv.diemMH;};
+        void setDiemMH(int diemMH){this->diemMH = diemMH;};
         string getHoTenHV(SV sv){return sv.hotenHV;};
-        void setHoTenHV(string hotenHV){
-            this->hotenHV = hotenHV;
+        void setHoTenHV(char hotenHV[]){
+            strcpy(this->hotenHV, hotenHV);
         }
         string toString(){
-            return  "Ma HV: " + maHV
-                    + "\nHo ten HV: " + hotenHV
-                    +"\n" + monHoc.toString();
-                    +"\n";
-        }
-        void displaySV(SV sv){
-            cout << sv.maHV << "\n" << sv.hotenHV << sv.monHoc.toString() <<endl;
+            string result;          
+            ostringstream convert;   
+            convert << diemMH;      
+            result = convert.str();
+            return  "Ma HV: " + string(maHV)
+                    + "\nHo ten HV: " + string(hotenHV)
+                    + "\nMaMH: " + string(maMH)
+                    + "\n diemMH: " + result
+                    + "\n";
         }
         
 };

@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "MonHoc.cpp"
+#include "SV.cpp"
 using namespace std;
 
 void menu(){
@@ -20,8 +20,18 @@ void menu(){
     cout << "0.Thoat." << endl;
 };
 //Tu
-void cas1(){};
-void cas2(){};
+void cas1(){
+    
+};
+void cas2(){SV sv;
+    char ma[8] = "sv0001";
+    sv.setMaHV(ma);
+    char ten[30] = "Nguyen Van Dat";
+    sv.setHoTenHV(ten);
+    char mamon[5] = "mh01";
+    sv.setMaHV(mamon);
+    sv.setDiemMH(6);
+    cout << sv.toString() << endl;};
 void cas3(){};
 void cas4(){};
 void cas5(){};

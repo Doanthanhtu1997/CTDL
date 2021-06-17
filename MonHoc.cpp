@@ -2,6 +2,7 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <string.h>
 using namespace std;
 
 class MonHoc
@@ -12,11 +13,11 @@ class MonHoc
 
     public:
         MonHoc(){};   
-        MonHoc(string maMH, int diemMH){
-            this->maMH = maMH;
+        MonHoc(char maMH[4], int diemMH){
+            strcpy(this->maMH,maMH);
             this->diemMH = diemMH;
         }
-        string getMaMH(MonHoc monHoc){return MonHoc.maMH;};
+        char* getMaMH(MonHoc monHoc){return MonHoc.maMH;};
         void setMaMH(string maMH){
             this->maMH = maMH;
         }
