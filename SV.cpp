@@ -11,8 +11,12 @@ class SV
     private:
         char maHV[8];
         char hotenHV[30];
-        char maMH[4];
-        int diemMH;
+        char maMH1[4];
+        int diemMH1;
+        char maMH2[4];
+        int diemMH2;
+        char maMHPhu[4];
+        int diemMHPhu;
     public:
         SV(){};   
         SV(char maHV[], char hotenHV[]){
