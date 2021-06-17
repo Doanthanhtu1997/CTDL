@@ -7,9 +7,9 @@ using namespace std;
 class SV
 {
     private:
-        string maHV;
-        string hotenHV;
-        MonHoc monHoc;
+        char maHV[8];
+        char hotenHV[30];
+        MonHoc monHoc[3];
     public:
         SV(){};   
         SV(string maHV, string hotenHV){
