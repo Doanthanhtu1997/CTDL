@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <iostream>
 #include "SV.cpp"
-#include "Course.cpp"
+#include "MonHoc.cpp"
 #include <iostream>
 #include "function.cpp"
 using namespace std;
 void docfile();
 int main(){
-    // SV sv1("sv0001","Nguyen Van Dat");
-    // sv1.setCourse("mh001","toan",9);
+    // SV sv1("sv0001", "Nguyen Van Dat");
+    // sv1.setMonHoc("mh001", 9);
     // cout << sv1.toString();
     // // cout << sv1.getMaHV << "\n" << sv1.getHoTenHV << endl;
-    do
+    while (true)
     {
         menu();
         cout << "Nhap: ";
@@ -60,7 +60,7 @@ int main(){
         }
         if(i == 0)
             exit(0);
-    } while (true);
+    } 
     
     return 0;
 }

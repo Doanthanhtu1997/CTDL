@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "Course.cpp"
+#include "MonHoc.cpp"
 using namespace std;
 
 class SV
@@ -9,19 +9,19 @@ class SV
     private:
         string maHV;
         string hotenHV;
-        Course course;
+        MonHoc monHoc;
     public:
         SV(){};   
         SV(string maHV, string hotenHV){
             this->maHV = maHV;
             this->hotenHV = hotenHV;
         }
-        void setCourse(Course course){
-            this->course = course;
+        void setMonHoc(MonHoc monHoc){
+            this->monHoc = monHoc;
         }
-        void setCourse(string maMH, string tenMH, int diemMH){
-            Course course(maMH, tenMH, diemMH);
-            this->course = course;
+        void setMonHoc(string maMH, int diemMH){
+            MonHoc monHoc(maMH, diemMH);
+            this->monHoc = monHoc;
         }
         string getMaHV(SV sv){return sv.maHV;};
         void setMaHV(string maHV){
@@ -34,11 +34,11 @@ class SV
         string toString(){
             return  "Ma HV: " + maHV
                     + "\nHo ten HV: " + hotenHV
-                    +"\n" + course.toString();
+                    +"\n" + monHoc.toString();
                     +"\n";
         }
         void displaySV(SV sv){
-            cout << sv.maHV << "\n" << sv.hotenHV << sv.course.toString() <<endl;
+            cout << sv.maHV << "\n" << sv.hotenHV << sv.monHoc.toString() <<endl;
         }
         
 };
